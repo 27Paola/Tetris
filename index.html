@@ -14,8 +14,26 @@
     </head>
 
     <body>
-        <canvas width="320" height="640" id="game"></canvas>
-    
+        <header class="header" id="hdr-1">
+            <div>
+                <button class="btn" id="btn-claro-oscuro">Claro/Oscuro</button>
+            </div>
+            <div>
+                <button class="btn" id="btn-iniciar">Iniciar</button>
+                <button class="btn" id="btn-reset">Reset</button>
+            </div>
+        </header>
+
+        <section class="container">
+            <canvas width="320" height="640" id="game"></canvas>
+            
+            <div class="seccion-botones">
+                <button class="btn" id="btn-izquierda"><img src="/img/botonIzquierda.png"></button>
+                <button class="btn" id="btn-abajo"><img src="/img/botonAbajo.png"></button>
+                <button class="btn" id="btn-derecha"><img src="/img/botonDerecha.png"></button>
+                <button class="btn" id="btn-arriba"><img src="/img/botonRotar.png"></button>
+            </div>
+        </section>
         <script src="script.js"></script>
 
     </body>
