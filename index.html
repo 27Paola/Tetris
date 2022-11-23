@@ -25,13 +25,14 @@
         </header>
 
         <section class="container">
-            <canvas width="320" height="640" id="game"></canvas>
+            <canvas width="360" height="720" id="game"></canvas>
+            <!-- <canvas id="game"></canvas> -->
             
             <div class="seccion-botones">
-                <button class="btn" id="btn-izquierda"><img src="/img/botonIzquierda.png"></button>
-                <button class="btn" id="btn-abajo"><img src="/img/botonAbajo.png"></button>
-                <button class="btn" id="btn-derecha"><img src="/img/botonDerecha.png"></button>
-                <button class="btn" id="btn-arriba"><img src="/img/botonRotar.png"></button>
+                <button onclick="moverClic()" class="btn" id="btn-izquierda"><img src="/img/botonIzquierda.png"></button>
+                <button onclick="moverClic()" class="btn" id="btn-abajo"><img src="/img/botonAbajo.png"></button>
+                <button onclick="moverClic()" class="btn" id="btn-derecha"><img src="/img/botonDerecha.png"></button>
+                <button onclick="moverClic()" class="btn" id="btn-arriba"><img src="/img/botonRotar.png"></button>
             </div>
         </section>
         <script src="script.js"></script>
