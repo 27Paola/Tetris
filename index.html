@@ -14,9 +14,36 @@
     </head>
 
     <body>
-        <canvas width="320" height="640" id="game"></canvas>
-    
-        <script src="script.js"></script>
+        <header class="header" id="hdr-1">
+            <label type="button" class="toggle-dark label">
+                <div class="toggle" onclick="changeMode()">
+                    <input class="toggle-state" type="checkbox" name="check" value="check">
+                    <div class="indicator"></div>
+                </div>
+            </label>
+            <div>
+                <button class="btn" id="btn-iniciar">Iniciar</button>
+                <button class="btn" id="btn-reset">Reset</button>
+            </div>
+        </header>
 
+        <section class="container">
+            <canvas width="360" height="720" id="game"></canvas>
+            <!-- <canvas id="game"></canvas> -->
+            
+            <div class="seccion-botones">
+                <button onclick="moverClic()" class="btn" id="btn-izquierda"><img src="/img/botonIzquierda.png"></button>
+                <button onclick="moverClic()" class="btn" id="btn-abajo"><img src="/img/botonAbajo.png"></button>
+                <button onclick="moverClic()" class="btn" id="btn-derecha"><img src="/img/botonDerecha.png"></button>
+                <button onclick="moverClic()" class="btn" id="btn-arriba"><img src="/img/botonRotar.png"></button>
+            </div>
+        </section>
+        <script src="script.js"></script>
+        <script type="text/javascript"> 
+            function changeMode() { 
+            var cuerpoweb = document.body; 
+            cuerpoweb.classList.toggle("dark"); 
+            }
+        </script>
     </body>
 </html>
