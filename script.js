@@ -311,4 +311,9 @@ document.addEventListener('keydown', function(e){
 
 // start the game
 rAF = requestAnimationFrame(loop);
-        
+
+/* modo dia-noche */ 
+function cambiarModo() { 
+    var cuerpoweb = document.body; 
+    cuerpoweb.classList.toggle("dark"); 
+}
